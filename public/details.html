@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Package Details - TravelGo</title>
+  <link href="https://fonts.googleapis.com/css?family=Poppins:400,600,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/style.css">
+  <link rel="stylesheet" href="/details.css">  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+  <header class="glass-effect">
+    <div class="logo-container">
+      <h4>TravelGo</h4>
+    </div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="./about.html">About</a>
+      <a href="./services.html">Services</a>
+      <a href="./contact.html">Contact us</a>
+      <button id="darkModeToggle" class="mode-toggle">
+        <i class="fas fa-moon"></i>
+        <span>Dark Mode</span>
+      </button>
+    </nav>
+  </header>
+  
+  <main>
+    <div id="packageDetails" class="detail-container glass-effect">
+      <!-- Package details will be dynamically inserted here -->
+    </div>
+    
+    <div id="bookingForm" class="booking-form glass-effect">
+      <h2>Book This Package</h2>
+      <form id="bookingFormElement">
+        <input type="text" id="userName" name="user_name" placeholder="Your Name" required>
+        <input type="email" id="userEmail" name="email" placeholder="Your Email" required>
+        <input type="tel" id="userPhone" name="phone" placeholder="Your Phone Number" required>
+        <input type="number" id="travelers" name="travelers" placeholder="Number of Travelers" min="1" required>
+        <input type="date" id="travelDate" name="travel_date" required>
+        <textarea id="specialRequests" name="special_requests" placeholder="Any special requests?"></textarea>
+        <button type="submit" class="btn-primary">Book Now</button>
+      </form>
+    </div>
+
+    <div id="relatedPackages" class="related-packages">
+      <h2>Related Packages</h2>
+      <div class="package-slider">
+        <!-- Related packages will be dynamically inserted here -->
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2023 TravelGo. All rights reserved.</p>
+  </footer>
+
+  <div id="notification" class="notification"></div>
+
+  <script src="details.js"></script>
+</body>
+</html>
